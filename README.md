@@ -76,7 +76,9 @@ Use `width: auto` over `width: 100%` for block elements.
 
 ### Colours
 
-Colours should be written as HEX with the exception of colours requiring an alpha channel. In this case RGBA should be used with a fallback written in RGB. Shorthand hex should be used where applicable. `color: #ff0;`
+Colours should be written as HEX with the exception of colours requiring an alpha channel. In this case RGBA should be used with a fallback written in RGB. 
+
+Shorthand hex should be used where applicable. `color: #ff0;`
 
 ### Backgrounds
 
