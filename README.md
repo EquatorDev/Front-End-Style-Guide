@@ -54,11 +54,11 @@ Class names should be readable and descriptive so don't be afraid to make them l
 
 Class names should not related to presentation. What is the div for, not what is looks like.
 
-##### Specificity
+### Specificity
 
 The combination of a tag and a class is often uneccessary e.g. `h3.subtitle`. If your h3 becomes an h4 in your markup you don't want to have to revisit your CSS and change this. Ditch the tag.
 
-##### Chaining
+### Chaining
 
 Try to keep the number of items in a single selector down to 4. The more you have, the more annoying overriding it further down in a your media queries.
 
@@ -76,9 +76,7 @@ Use `width: auto` over `width: 100%` for block elements.
 
 ### Colours
 
-Colours should be written as HEX with the exception of colours requiring an alpha channel. In this case RGBA should be used with a fallback written in RGB. 
-
-Shorthand hex should be used where applicable. `color: #ff0;`
+Colours should be written as HEX with the exception of colours requiring an alpha channel. In this case RGBA should be used with a fallback written in RGB. Shorthand hex should be used where applicable. `color: #ff0;`
 
 ### Backgrounds
 
@@ -87,7 +85,6 @@ Don't redeclare the same background properties over and setting a colour changin
 ### Inline Styles
 
 General bad as they force the need for importants to override. May be necessary when generated from CMS content though. 
-
 ### Comments
 
 Make good use of comments. These will be removed in minification so won't make it up to the live site, but will come in handy during development.
