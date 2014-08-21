@@ -13,3 +13,12 @@ Rules have exceptions. Use the common sense you got from your mother as to wheth
 
 <a id="#html"></a>
 ## HTML
+
+<a id="#css"></a>
+## CSS
+
+<a id="#less"></a>
+## LESS
+
+<a id="#javascript"></a>
+## JavaScript
