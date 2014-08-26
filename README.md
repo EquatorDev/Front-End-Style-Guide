@@ -8,8 +8,9 @@ Rules have exceptions. Use the common sense you got from your mother as to wheth
 
 1. [HTML](#html)
 2. [CSS](#css)
-3. [LESS](#less)
-4. [JavaScript](#javascript)
+2.1. [LESS](#less)
+3. [JavaScript](#javascript)
+4. Performance Techniques
 
 <a id="#html"></a>
 ## HTML
@@ -80,7 +81,7 @@ Colours should be written as HEX with the exception of colours requiring an alph
 
 ### Backgrounds
 
-Don't redeclare the same background properties over and setting a colour changing image. Make use of inheritence. 
+Don't redeclare the same background properties over and over. Make use of inheritence. 
 
 ### Inline Styles
 
@@ -94,21 +95,27 @@ Make good use of comments. These will be removed in minification so won't make i
 :hover should generally be accompanied by :focus for accessibility reasons.
 
 <a id="#less"></a>
-## LESS
+### LESS Specific
 
-### Nesting
+#### Nesting
 
 Nesting should ideally go no more than three levels deep. Following the CSS rules above, this shouldn't be too hard to achieve. 
 
-### Mixins
+#### Mixins
 
 Your CSS should be free from vendor prefixes. These should be injected via mixins. If you find yourself writing vendor prefixed multi line definitions, bundle it up as a mixin.
 
-### Variables
+#### Variables
 
 Making good use of variables helps keep your CSS highly maintainable. Font and colour values should be saved as variables as a standard.
 
 ## JavaScript
+
+## Performance Techniques
+
+### Image Processing
+
+
 
 ## Inspired by 
 
