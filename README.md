@@ -8,9 +8,9 @@ Rules have exceptions. Use the common sense you got from your mother as to wheth
 
 1. [HTML](#html)
 2. [CSS](#css)
-2.1. [LESS](#less)
+3. [LESS](#less)
 3. [JavaScript](#javascript)
-4. Performance Techniques
+4. [Performance Techniques](#perf)
 
 <a id="#html"></a>
 ## HTML
@@ -30,6 +30,10 @@ Using the &lt;center&gt; is bad practise because it has no other meaning other t
 ### UL or OL
 
 Lists where order is important use the OL tag. 
+
+### Attributes ###
+
+Attribute values should be wrapped double quotes. Single quotes are acceptable too. Just be consistent. 
 
 <a id="#css"></a>
 ## CSS
@@ -77,11 +81,7 @@ Use `width: auto` over `width: 100%` for block elements.
 
 ### Colours
 
-Colours should be written as HEX with the exception of colours requiring an alpha channel. In this case RGBA should be used with a fallback written in RGB. Shorthand hex should be used where applicable. `color: #ff0;`
-
-### Backgrounds
-
-Don't redeclare the same background properties over and over. Make use of inheritence. 
+Use HEX with the exception of RGBA. If using RGBA a fallback written in RGB should be provided. Shorthand hex should be used where applicable. `color: #ff0;`
 
 ### Inline Styles
 
@@ -95,7 +95,7 @@ Make good use of comments. These will be removed in minification so won't make i
 :hover should generally be accompanied by :focus for accessibility reasons.
 
 <a id="#less"></a>
-### LESS Specific
+### LESS
 
 #### Nesting
 
@@ -109,13 +109,15 @@ Your CSS should be free from vendor prefixes. These should be injected via mixin
 
 Making good use of variables helps keep your CSS highly maintainable. Font and colour values should be saved as variables as a standard.
 
+<a id="#javascript"></a>
 ## JavaScript
 
+<a id="#perf"></a>
 ## Performance Techniques
 
 ### Image Processing
 
-
+You'll more than likely be building against a content management system
 
 ## Inspired by 
 
