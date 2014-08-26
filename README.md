@@ -115,9 +115,13 @@ Making good use of variables helps keep your CSS highly maintainable. Font and c
 <a id="#perf"></a>
 ## Performance Techniques
 
-### Image Processing
+### Dynamic Image Processing
 
-You'll more than likely be building against a content management system
+You'll more than likely be building against a content management system. We cannot assume the website administrator will be uploading an image which is the optimal size. All content managed images should be processed through an image processing tool such as ImageGen. Images should be shrunk if larger than a predefined size. 
+
+### Concatenation & Minification
+
+Multiple CSS and JavaScript files should be combined into as few files as possible. Many tools are available to allow this to happen on the fly e.g. ASP.Net's built in bundling or the DotLESS NuGet package. These tools also include the ability to minify the generated output to keep filesize as small as possible. 
 
 ## Inspired by 
 
