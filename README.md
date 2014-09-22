@@ -16,10 +16,12 @@ Rules have exceptions. Use the common sense you got from your mother as to wheth
 ## HTML
 
 ### Closing tags
+
 Close your tags. It's tidier and easier to read and identify nesting.
 
-### Images
-Don't forget your alt tags which should be a concise description of what the image shows. Forgetting to do so fails to meet accessibility standards.   
+### Image Alt Tags
+
+All images should have an alt tag. It should be a concise description of what the image shows. Forgetting to do so fails to meet accessibility standards.   
 
 ### Presentational Tags
 
@@ -57,7 +59,7 @@ Classes should be lowercase with words seperated by a single dash e.g. `.booking
     
 Class names should be readable and descriptive so don't be afraid to make them long. Long class names are better than more chaining.
 
-Class names should not related to presentation. What is the div for, not what is looks like.
+Class names should not related to presentation. What is the div for, not what it looks like.
 
 ### Specificity
 
@@ -85,7 +87,8 @@ Use HEX with the exception of RGBA. If using RGBA a fallback written in RGB shou
 
 ### Inline Styles
 
-General bad as they force the need for importants to override. May be necessary when generated from CMS content though. 
+General bad as they force the need for importants to override. May be necessary when generated from CMS content though.
+
 ### Comments
 
 Make good use of comments. These will be removed in minification so won't make it up to the live site, but will come in handy during development.
@@ -93,6 +96,8 @@ Make good use of comments. These will be removed in minification so won't make i
 ### Anchors
 
 :hover should generally be accompanied by :focus for accessibility reasons.
+
+
 
 <a id="#less"></a>
 ### LESS
