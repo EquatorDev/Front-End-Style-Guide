@@ -61,6 +61,10 @@ Class names should be readable and descriptive so don't be afraid to make them l
 
 Class names should not related to presentation. What is the div for, not what it looks like.
 
+### IDs
+
+IDs should not be used for styling purposes. It's far too restrictive when styling against IDs. No opportunity for reusing shared styles. Having more than one item on the page will cause problems that can and probably will happen.
+
 ### Specificity
 
 The combination of a tag and a class is often uneccessary e.g. `h3.subtitle`. If your h3 becomes an h4 in your markup you don't want to have to revisit your CSS and change this. Ditch the tag.
