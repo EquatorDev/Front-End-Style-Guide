@@ -97,6 +97,8 @@ General bad as they force the need for importants to override. May be necessary 
 
 Make good use of comments. These will be removed in minification so won't make it up to the live site, but will come in handy during development.
 
+Please don't commit large chunks of commented out code to source control without a description as to why it's commented out. It's confusing months later why it's there and why it was removed.
+
 ### Anchors
 
 :hover should generally be accompanied by :focus for accessibility reasons.
