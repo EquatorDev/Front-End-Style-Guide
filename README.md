@@ -2,7 +2,7 @@
 
 The following is a first draft of front end development style guide which should be followed when developing websites for Equator.
 
-Rules have exceptions. Use the common sense you got from your mother as to whether they actually do apply an a given situation. 
+Rules have exceptions. Use the common sense to determine whether they actually do apply to a given situation. 
 
 ## Table of Contents
 
@@ -57,7 +57,7 @@ Specify one selector per line in multi-selector rules e.g.
 
 Classes should be lowercase with words seperated by a single dash e.g. `.booking-component`
     
-Class names should be readable and descriptive so don't be afraid to make them long. Long class names are better than more chaining.
+Class names should be readable and descriptive so don't be afraid to make them long. Long class names are better than more chaining. We like BEM. Consider using it on your project. http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
 
 Class names should not related to presentation. What is the div for, not what it looks like.
 
@@ -122,6 +122,10 @@ Making good use of variables helps keep your CSS highly maintainable. Font and c
 
 <a id="#javascript"></a>
 ## JavaScript
+
+## Plugins
+
+Consider each plugin carefully. It should be lightweight. If it's a slider how does it perform with loads of slides? Does it work with multiple instances on the same page?
 
 <a id="#perf"></a>
 ## Performance Techniques
