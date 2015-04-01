@@ -123,6 +123,124 @@ Making good use of variables helps keep your CSS highly maintainable. Font and c
 <a id="#javascript"></a>
 ## JavaScript
 
+### Naming conventions
+
+* Avoid the user of reserved words and use readable synonyms
+
+``` javascript
+var element; //opt for this one
+var variable;
+```
+
+* Don't name a parameter within a function 'arguments' as this will override the default 'arguments' object in the function scope. If there's a lack of imagination use 'args' but please, try to be descriptive
+ 
+### Declarations
+
+* It's better to declare objects & arrays in a literal way
+
+``` javascript
+//Arrays
+var array = [];
+
+//Objects
+var obj = {};
+```
+
+### Variables
+
+* avoid Global variables. Lot of developers use the same names for variables so best define their scope and keep the Global scope free and organised.
+
+### Strings
+
+* Use ' ' instead of " " for strings - most times you'll want to use " " for DOM element tags within JS
+
+### Use of elements
+
+* Avoid adding to array with element index but use push function instead (you may not know the length of the array at a given time)
+
+```
+var array = [];
+
+array.push('newElement');
+
+//instead of
+array[array.length - 1] = 'newElement';
+```
+
+* Use of dot notation on objects is a good thing. Use the [''] notation when using a parameter
+
+``` javascript
+var options = {
+    option1: 1,
+    option2: 2
+};
+
+myObject.option1 = 3;
+
+var getOption = function(optionName){
+    return options[optionName];
+};
+```
+
+* Don't use a trailing comma in objects - it's the end and it causes issues on some versions of IE
+
+``` javascript
+var options = {
+    option1: 1,
+    option2: 2
+};
+
+var options = {
+    option1: 1,
+    option2: 2, //there's nothing after so no trailing comma
+};
+
+```
+
+* If statement brackets are brownie points - keep it organised and easy to read.
+
+When using single line returns this can go all in one line
+
+``` javascript
+if($('.class').length == 0){ return false;}
+```
+
+### Functions
+
+* Always assign functions to variables if used within if statements, loops and so on.
+
+``` javascript
+var readyToDoSomething = true;
+var usableFunciton = function(){
+//do something
+};
+
+if(readyToDoSomething){
+    usableFunction();
+}
+```
+
+### Hoisting
+
+* Hoisting is a nice feature but please avoid hoisting issues (and readability issues)
+** Assign variables at the top of their scope - When hoisting variables go to the top but their assignment doesn't!
+
+### jQuery
+
+* Cache jQuery lookups to save you calculation time
+
+``` javascript
+var myElement =  $('.element');
+
+myElement.find('.children').addClass('newClass');
+
+myElement.addClass('newParentClass');
+```
+
+### Design Patterns
+
+#### Modular Structure
+
 ## Plugins
 
 Consider each plugin carefully. It should be lightweight. If it's a slider how does it perform with loads of slides? Does it work with multiple instances on the same page?
@@ -140,6 +258,7 @@ Multiple CSS and JavaScript files should be combined into as few files as possib
 
 ## Inspired by 
 
-[1](https://github.com/ginatrapani/ThinkUp/wiki/Code-Style-Guide:-CSS)
-[2](http://csswizardry.com/2012/04/my-html-css-coding-style/)
-[3](https://github.com/necolas/idiomatic-css)
+* [1](https://github.com/ginatrapani/ThinkUp/wiki/Code-Style-Guide:-CSS)
+* [2](http://csswizardry.com/2012/04/my-html-css-coding-style/)
+* [3](https://github.com/necolas/idiomatic-css)
+* [4] (https://github.com/airbnb/javascript#objects)
